@@ -1,0 +1,18 @@
+'''
+The drawing shows 6 squares the sides of which have a length of 1, 1, 2, 3, 5, 8. 
+It's easy to see that the sum of the perimeters of these squares is : 
+4 * (1 + 1 + 2 + 3 + 5 + 8) = 4 * 20 = 80
+'''
+def perimeter(n):
+	li = []
+	for i in range(n):
+		if i == 0 or i == 1:
+			li.append(1)
+		else:
+			li.append(li[i-2]+li[i-1])
+	return li
+  
+  
+  '''
+  斐波那契数列，简单的一道题，不过在怎么生成列表而不是单个数上，脑筋没转过来,想了一会
+  '''
